@@ -1,5 +1,16 @@
 {% extends "@FOSUser/layout.html.twig" %}
 
 {% block fos_user_content %}
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="{{ asset('login/css/login.css') }}" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="{{ asset('login/js/login.js') }} "></script>
+    <script language="JavaScript">
+        $( document ).ready(function() {
+            $('#myModal').modal('toggle');
+        });
+    </script>
     {{ include('@FOSUser/Security/login_content.html.twig') }}
 {% endblock fos_user_content %}
