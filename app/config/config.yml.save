@@ -9,7 +9,7 @@ parameters:
     locale: fr
 
 framework:
-    serializer:
+        serializer:
         enabled: true
     #esi: ~
     translator: { fallbacks: ['%locale%'] }
@@ -98,15 +98,3 @@ knp_paginator:
         pagination: '@KnpPaginator/Pagination/sliding.html.twig'     # sliding pagination controls template
         sortable: '@KnpPaginator/Pagination/sortable_link.html.twig' # sort link template
         filtration: '@KnpPaginator/Pagination/filtration.html.twig'  # filters template
-
-fos_rest:
-    routing_loader:
-        include_format: false
-    view:
-        view_response_listener: true
-    format_listener:
-        rules:
-            - { path: '^/', priorities: ['json'], fallback_format: 'json', prefer_extension: false }
-    # configuration à rajouter pour désactiver le body listener
-    body_listener:
-        enabled: false
