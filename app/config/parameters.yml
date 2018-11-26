@@ -1,0 +1,22 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: Med
+    database_user: nour
+    database_password: nournour
+
+
+
+
+    mailer_transport: smtp
+    mailer_encryption: ssl
+    mailer_auth_mode: login
+    mailer_port: 465
+    mailer_host: smtp.gmail.com
+    mailer_user: benarfanour9@gmail.com
+    mailer_password: africanwinners1995
+
+
+
+    secret: ThisTokenIsNotSoSecretChangeIt

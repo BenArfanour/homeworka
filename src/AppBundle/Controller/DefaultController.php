@@ -35,26 +35,23 @@ class DefaultController extends FOSRestController
     	//$securityContext = $this->container->get('security.authorization_checker');
 			//if ($securityContext->isGranted('IS_AUTHENTICATED_FULLY')) {
     
-
 					    $message = \Swift_Message::newInstance()
-					                ->setSubject('Accusé de réception')
+					                ->setSubject('Accusé de réception | Test')
 					                ->setFrom('nour.benarfa@esprit.tn')
-					                ->setTo()
-					                 		
-					                  
+					                ->setTo('nourbenarfa@hotmail.com')
+  
 					                ->setBody(
 					                $this->renderView('mail.html.twig'),
 					            'text/html'
 					                );
-
 					        
 					            $this->get('mailer')->send($message);
-
 					        $response = new Response(json_encode(array('success' => true)));
 					        $response->headers->set('Content-Type', 'application/json');
-
 					        return $response;
-					    }
+					                
+					        
+	 }
 
 			//}
 
@@ -78,11 +75,8 @@ class DefaultController extends FOSRestController
 
 
 
-    public function successAction(){
-        return new Response("email envoyé avec succès, Merci de vérifier votre adresse mail
-       ."); } 
 
     
-}
+
 
 

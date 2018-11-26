@@ -11,9 +11,8 @@ fos_user:
 my_app_mail_homepage:
     path: /
     defaults: { _controller: AppBundle:Default:index }
-my_app_mail_accuse:
-    path: /success
-    defaults: { _controller: AppBundle:Default:success }
+
+
 
 
 api_rest:
