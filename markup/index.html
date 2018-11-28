@@ -1,0 +1,854 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<title>Internal_email-29</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+	/*! CSS Used from: https://adminlte.io/themes/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css */
+	a{background-color:transparent;}
+	a:active,a:hover{outline:0;}
+	sup{position:relative;font-size:75%;line-height:0;vertical-align:baseline;}
+	sup{top:-.5em;}
+	@media print{
+	*,:after,:before{color:#000!important;text-shadow:none!important;background:0 0!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+	a,a:visited{text-decoration:underline;}
+	a[href]:after{content:" (" attr(href) ")";}
+	a[href^="#"]:after{content:"";}
+	h3,p{orphans:3;widows:3;}
+	h3{page-break-after:avoid;}
+	}
+	*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+	a{color:#337ab7;text-decoration:none;}
+	a:focus,a:hover{color:#23527c;text-decoration:underline;}
+	a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+	h3{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+	h3{margin-top:20px;margin-bottom:10px;}
+	h3{font-size:24px;}
+	p{margin:0 0 10px;}
+	/*! CSS Used from: https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/css/font-awesome.min.css */
+	.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+	.fa-arrow-circle-right:before{content:"\f0a9";}
+	/*! CSS Used from: https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/css/ionicons.min.css */
+	.ion,.ion-stats-bars:before{display:inline-block;font-family:"Ionicons";speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;text-rendering:auto;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+	.ion-stats-bars:before{content:"\f2b5";}
+	/*! CSS Used from: https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css */
+	h3{font-family:'Source Sans Pro',sans-serif;}
+	a{color:#3c8dbc;}
+	a:hover,a:active,a:focus{outline:none;text-decoration:none;color:#72afd2;}
+	.small-box{border-radius:2px;position:relative;display:block;margin-bottom:20px;box-shadow:0 1px 1px rgba(0,0,0,0.1);border-bottom-left-radius: 40px;
+	border-top-right-radius: 40px;}
+	.small-box>.inner{padding:10px;}
+	.small-box>.small-box-footer{position:relative;text-align:center;padding:3px 0;color:#fff;color:rgba(255,255,255,0.8);display:block;z-index:10;background:rgba(0,0,0,0.1);text-decoration:none;}
+	.small-box>.small-box-footer:hover{color:#fff;background:rgba(0,0,0,0.15);}
+	.small-box h3{font-size:33px;font-weight:bold;margin:0 0 10px 0;white-space:nowrap;padding:0;}
+	.small-box p{font-size:15px;}
+	.small-box h3,.small-box p{z-index:5;    color: white;}
+	.small-box .icon{-webkit-transition:all .3s linear;-o-transition:all .3s linear;transition:all .3s linear;position:absolute;top:-10px;right:10px;z-index:0;font-size:90px;color:rgba(0,0,0,0.15);}
+	.small-box:hover{text-decoration:none;color:#f9f9f9;}
+	.small-box:hover .icon{font-size:95px;}
+	@media (max-width:767px){
+	.small-box{text-align:center;}
+	.small-box .icon{display:none;}
+	.small-box p{font-size:12px;}
+	}
+	.bg-green{color:#fff!important;}
+	.bg-green{background-color:#00a65a!important;}
+	.bg-bleu{background-color:#3fc0ef!important;}
+	/*! CSS Used fontfaces */
+	@font-face{font-family:'FontAwesome';src:url('https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');src:url('https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/fonts/fontawesome-webfont.eot#iefix&v=4.7.0') format('embedded-opentype'),url('https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('https://adminlte.io/themes/AdminLTE/bower_components/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+	@font-face{font-family:"Ionicons";src:url("https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/fonts/ionicons.eot?v=2.0.0");src:url("https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"),url("https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/fonts/ionicons.ttf?v=2.0.0") format("truetype"),url("https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/fonts/ionicons.woff?v=2.0.0") format("woff"),url("https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");font-weight:normal;font-style:normal;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidh18Smxg.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkido18Smxg.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidg18Smxg.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidv18Smxg.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidj18Smxg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkidi18Smxg.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:300;src:local('Source Sans Pro Light Italic'), local('SourceSansPro-LightItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZZMkids18Q.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7qsDJT9g.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7jsDJT9g.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7rsDJT9g.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7ksDJT9g.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7osDJT9g.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7psDJT9g.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:400;src:local('Source Sans Pro Italic'), local('SourceSansPro-Italic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK1dSBYKcSV-LCoeQqfX1RYOo3qPZ7nsDI.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdh18Smxg.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdo18Smxg.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdg18Smxg.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdv18Smxg.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdj18Smxg.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCdi18Smxg.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:italic;font-weight:600;src:local('Source Sans Pro SemiBold Italic'), local('SourceSansPro-SemiBoldItalic'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKwdSBYKcSV-LCoeQqfX1RYOo3qPZY4lCds18Q.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhduz8A.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwkxduz8A.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmxduz8A.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlBduz8A.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmBduz8A.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmRduz8A.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:300;src:local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lqDY.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qPK7lqDY.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNK7lqDY.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qO67lqDY.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qN67lqDY.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNq7lqDY.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:400;src:local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7l.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhduz8A.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwkxduz8A.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmxduz8A.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlBduz8A.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmBduz8A.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmRduz8A.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:600;src:local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhduz8A.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwkxduz8A.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmxduz8A.woff2) format('woff2');unicode-range:U+1F00-1FFF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlBduz8A.woff2) format('woff2');unicode-range:U+0370-03FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmBduz8A.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmRduz8A.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Source Sans Pro';font-style:normal;font-weight:700;src:local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwlxdu.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	/* test */
+	/* end test */
+		* {
+			-ms-text-size-adjust:100%;
+			-webkit-text-size-adjust:none;
+			-webkit-text-resize:100%;
+			text-resize:100%;
+		}
+		a{
+			outline:none;
+			color:#40aceb;
+			text-decoration:underline;
+		}
+		a:hover{text-decoration:none !important;}
+		.nav a:hover{text-decoration:underline !important;}
+		.title a:hover{text-decoration:underline !important;}
+		.title-2 a:hover{text-decoration:underline !important;}
+		.btn:hover{opacity:0.8;}
+		.btn a:hover{text-decoration:none !important;}
+		.btn{
+			-webkit-transition:all 0.3s ease;
+			-moz-transition:all 0.3s ease;
+			-ms-transition:all 0.3s ease;
+			transition:all 0.3s ease;
+		}
+		table td {border-collapse: collapse !important;}
+		.ExternalClass, .ExternalClass a, .ExternalClass span, .ExternalClass b, .ExternalClass br, .ExternalClass p, .ExternalClass div{line-height:inherit;}
+		@media only screen and (max-width:500px) {
+			table[class="flexible"]{width:100% !important;}
+			table[class="center"]{
+				float:none !important;
+				margin:0 auto !important;
+			}
+			*[class="hide"]{
+				display:none !important;
+				width:0 !important;
+				height:0 !important;
+				padding:0 !important;
+				font-size:0 !important;
+				line-height:0 !important;
+			}
+			td[class="img-flex"] img{
+				width:100% !important;
+				height:auto !important;
+			}
+			td[class="aligncenter"]{text-align:center !important;}
+			th[class="flex"]{
+				display:block !important;
+				width:100% !important;
+			}
+			td[class="wrapper"]{padding:0 !important;}
+			td[class="holder"]{padding:30px 15px 20px !important;}
+			td[class="nav"]{
+				padding:20px 0 0 !important;
+				text-align:center !important;
+			}
+			td[class="h-auto"]{height:auto !important;}
+			td[class="description"]{padding:30px 20px !important;}
+			td[class="i-120"] img{
+				width:120px !important;
+				height:auto !important;
+			}
+			td[class="footer"]{padding:5px 20px 20px !important;}
+			td[class="footer"] td[class="aligncenter"]{
+				line-height:25px !important;
+				padding:20px 0 0 !important;
+			}
+			tr[class="table-holder"]{
+				display:table !important;
+				width:100% !important;
+			}
+			th[class="thead"]{display:table-header-group !important; width:100% !important;}
+			th[class="tfoot"]{display:table-footer-group !important; width:100% !important;}
+		}
+	@media screen and (max-width: 600px) {
+	table#id{
+	border: 0;
+	}
+	table caption#id{
+	font-size: 1.3em;
+	}
+	
+	table thead#id {
+	border: none;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	}
+	
+	table tr#id {
+	border-bottom: 3px solid #ddd;
+	display: block;
+	margin-bottom: .625em;
+	}
+	
+	table td#id {
+	border-bottom: 1px solid #ddd;
+	display: block;
+	font-size: .8em;
+	text-align: right;
+	}
+	</style>
+</head>
+<body style="margin:0; padding:0;" bgcolor="#eaeced">
+	<table style="min-width:320px;" width="100%" cellspacing="0" cellpadding="0" bgcolor="#eaeced">
+		<!-- fix for gmail -->
+		<tbody><tr>
+			<td class="hide">
+				<table width="600" cellpadding="0" cellspacing="0" style="width:600px !important;">
+					<tbody><tr>
+						<td style="min-width:600px; font-size:0; line-height:0;">&nbsp;</td>
+					</tr>
+				</tbody></table>
+			</td>
+		</tr>
+		<tr>
+			<td class="wrapper" style="padding:0 10px;">
+				<!-- module 1 -->
+				<table data-module="module-1" data-thumb="thumbnails/01.png" width="100%" cellpadding="0" cellspacing="0" style="
+					background-color: white;
+					">
+					<tbody><tr>
+						<td data-bgcolor="bg-module" bgcolor="#eaeced">
+							<table class="flexible" width="600" align="center" style="margin:0 auto;background-color: white;" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<td style="padding:29px 0 30px;">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+												<th class="flex" width="113" align="left" style="padding:0;">
+													<table class="center" cellpadding="0" cellspacing="0">
+														<tbody><tr>
+															<td style="line-height:0;">
+																<a target="_blank" style="text-decoration:none;" href="https://www.psd2html.com/"><img src="https://www.med.tn/img/logomedtn.png" border="0" style="font:bold 12px/12px Arial, Helvetica, sans-serif;color:#606060;margin-left: 16px;" align="left" vspace="0" hspace="0" width="117" height="100" alt="PSD2HTML.COM"></a>
+															</td>
+														</tr>
+													</tbody></table>
+												</th>
+												<th class="flex" align="left" style="padding:0;">
+													<table width="100%" cellpadding="0" cellspacing="0">
+														<tbody><tr>
+															<td data-color="text" data-size="size navigation" data-min="10" data-max="22" data-link-style="text-decoration:none; color:#888;" class="nav" align="right" style="font:bold 13px/15px Arial, Helvetica, sans-serif; color:#888;">
+																<a target="_blank" style="text-decoration:none; color:#888;" href="#">Newsletter novembre 2018</a> &nbsp; &nbsp;
+																
+																
+															</td>
+														</tr>
+													</tbody></table>
+												</th>
+											</tr>
+										</tbody></table>
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+					</tr>
+				</tbody></table>
+				<!-- module 2 -->
+				<table data-module="module-2" data-thumb="thumbnails/02.png" width="100%" cellpadding="0" cellspacing="0">
+					<tbody><tr>
+						<td data-bgcolor="bg-module" bgcolor="#eaeced">
+							<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+								<tbody><tr>
+									<td class="img-flex"><img src="images/img-01.jpg" style="vertical-align:top;" width="600" height="306" alt=""></td>
+								</tr>
+								<tr>
+									<td data-bgcolor="bg-block" class="holder" style="padding:58px 60px 52px;" bgcolor="#f9f9f9">
+										<table width="100%" cellpadding="0" cellspacing="0">
+											<tbody>
+												<tr>
+													<td data-color="title" data-size="size title" data-min="25" data-max="45" data-link-color="link title color" data-link-style="text-decoration:none; color:#292c34;" class="title" align="center" style="font-size: 24px;font-family: sharp-sans-bold,Arial,sans-serif;color:#292c34;padding:0 0 24px;">
+														Vos Statistiques par rapport au mois octobre
+													</td>
+												</tr>
+												<tr>
+													<td data-color="text" data-size="size text" data-min="10" data-max="26" data-link-color="link text color" data-link-style="font-weight:bold; text-decoration:underline; color:#40aceb;" align="center" style="font:bold 16px/25px Arial, Helvetica, sans-serif; color:#888; padding:0 0 23px;">
+														
+														<!-- block -->
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody>
+																<tr>
+																	<th class="flex" width="113" align="left" style="padding-right: 6px;">
+																		<table width="100%" cellpadding="0" cellspacing="0">
+																			<tbody><tr>
+																				<td data-color="text" data-size="size navigation" data-min="10" data-max="22" data-link-style="text-decoration:none; color:#888;" class="nav" align="right" style="font:bold 13px/15px sharp-sans-semibold,Arial,sans-serif; color:#888;">
+																					
+																					<div class="small-box bg-bleu">
+																						<div class="inner">
+																							<h3>+53%<sup style="font-size: 20px">/M</sup></h3>
+																							<p>Viste de votre profil</p>
+																						</div>
+																						
+																						
+																					</div>
+																					
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</th>
+																<th class="flex" width="113" align="left" style="padding-right: 6px;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td data-color="text" data-size="size navigation" data-min="10" data-max="22" data-link-style="text-decoration:none; color:#888;" class="nav" align="right" style="font:bold 13px/15px sharp-sans-semibold,Arial,sans-serif; color:#888;">
+																				
+																				<div class="small-box bg-green">
+																					<div class="inner">
+																						<h3>5 rdv<sup style="font-size: 20px">/M</sup></h3>
+																						<p>Rendez Vous Pris
+																						</p>
+																					</div>
+																					
+																					
+																				</div>
+																				
+																			</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</th>
+															<th class="flex" width="113" align="left" style="padding:0;">
+																<table width="100%" cellpadding="0" cellspacing="0">
+																	<tbody><tr>
+																		<td data-color="text" data-size="size navigation" data-min="10" data-max="22" data-link-style="text-decoration:none; color:#888;" class="nav" align="right" style="font:bold 13px/15px sharp-sans-semibold,Arial,sans-serif; color:#888;">
+																			
+																			<div class="small-box bg-bleu">
+																				<div class="inner">
+																					<h3>+20%<sup style="font-size: 20px"></sup></h3>
+																					<p>Réponses Lus</p>
+																				</div>
+																				
+																				
+																			</div>
+																			
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+															
+														</th>
+													</tr>
+												</tbody>
+											</table>
+											<!--TEST-->
+										</td>
+									</tr>
+									<tr>
+										<td style="padding:0 0 20px;">
+											<table width="134" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td data-bgcolor="bg-button" data-size="size button" data-min="10" data-max="16" class="btn" align="center" style="font:12px/14px sharp-sans-semibold,Arial,sans-serif; color:#f8f9fb; text-transform:uppercase; mso-padding-alt:12px 10px 10px; border-radius:2px;" bgcolor="#7bb84f">
+														
+
+
+													</td>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr><td height="28"></td></tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<!-- module 3 -->
+		<table data-module="module-3" data-thumb="thumbnails/03.png" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td data-bgcolor="bg-module" bgcolor="#eaeced">
+					<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td class="img-flex"><img src="images/img-02.jpg" style="vertical-align:top;" width="600" height="249" alt=""></td>
+						</tr>
+						<tr>
+							<td data-bgcolor="bg-block" class="holder" style="padding:65px 60px 50px;" bgcolor="#f9f9f9">
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<td data-color="title" data-size="size title" data-min="20" data-max="40" data-link-color="link title color" data-link-style="text-decoration:none; color:#292c34;" class="title" align="center" style="font:30px/33px sharp-sans-semibold,Arial,sans-serif; color:#292c34; padding:0 0 24px;">
+											
+											Votre Progression sur Notre Platfomre
+										</td>
+									</tr>
+									<tr>
+										<td data-color="text" data-size="size text" data-min="10" data-max="26" data-link-color="link text color" data-link-style="font-weight:bold; text-decoration:underline; color:#40aceb;" align="center" style="font:16px/29px sharp-sans-semibold,Arial,sans-serif; color:#888; padding:0 0 21px;">
+											
+											<table id="tab" style="border: 1px solid #ccc;
+												border-collapse: collapse;
+												margin: 0;
+												padding: 0;
+												width: 100%;
+												table-layout: fixed;">
+												<caption id="tab" style=" font-size: 1.5em;
+												margin: .5em 0 .75em;"></caption>
+												<thead id="tab" >
+													<tr id="tab" style="background-color: #f8f8f8;
+														border: 1px solid #ddd;
+														padding: .35em;">
+														<th scope="col" style="  padding: .625em;
+															text-align: center; font-size: .85em;
+															letter-spacing: .1em;
+														text-transform: uppercase;"></th>
+														<th scope="col" id="tab" style="  padding: .625em;
+															text-align: center;  font-size: .85em;
+															letter-spacing: .1em;
+														text-transform: uppercase;">Cumulé</th>
+														<th scope="col" style="  padding: .625em;
+															text-align: center; font-size: .85em;
+															letter-spacing: .1em;
+														text-transform: uppercase;">Mois septembre</th>
+														<th scope="col" style="  padding: .625em;
+															text-align: center; font-size: .85em;
+															letter-spacing: .1em;
+														text-transform: uppercase;">Mois octobre</th>
+														
+													</tr>
+												</thead>
+												<tbody>
+													<tr id="tab" style="background-color: #f8f8f8;
+														border: 1px solid #ddd;
+														padding: .35em;">
+														<td data-label="" id="tab" style="  padding: .625em;
+														text-align: center;">Rendez-Vous</td>
+														<td data-label="Cumulé" id="tab" style="  padding: .625em;
+														text-align: center;">65</td>
+														<td data-label="mois septembre" id="tab" style="  padding: .625em;
+														text-align: center;">4</td>
+														<td data-label="mois octobre" id="tab" style="  padding: .625em;
+														text-align: center;">12+ <b style="color:green;float: right;">33%</b></td>
+													</tr>
+													<tr id="tab" style="background-color: #f8f8f8;
+														border: 1px solid #ddd;
+														padding: .35em;">
+														<td scope="row" data-label="" id="tab" style="  padding: .625em;
+														text-align: center;">Visites sur votre profile	</td>
+														<td data-label="Cumulé" id="tab" style="  padding: .625em;
+														text-align: center;">15000</td>
+														<td data-label="mois septembre" id="tab" style="  padding: .625em;
+														text-align: center;">4300</td>
+														<td data-label="mois  octobre" id="tab" style="  padding: .625em;
+														text-align: center;">4300+ <b style="color:green;float: right;">3%</b></td>
+													</tr>
+
+													<tr id="tab" style="background-color: #f8f8f8;
+														border: 1px solid #ddd;
+														padding: .35em;">
+														<td scope="row" data-label="" id="tab" style="  padding: .625em;
+														text-align: center;">Reponses lus</td>
+														<td data-label="Cumulé"id="tab" style="  padding: .625em;
+														text-align: center;">33000	</td>
+														<td data-label="mois septembre" id="tab" style="  padding: .625em;
+														text-align: center;">12000	</td>
+														<td data-label="mois octobre" id=tab style="  padding: .625em;
+														text-align: center;">100000+ <b style="color:green;float: right;">26%</b></td>
+													</tr >
+													
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td style="padding:0 0 20px;">
+											<table width="134" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td data-bgcolor="bg-button" data-size="size button" data-min="10" data-max="16" class="btn" align="center" style="font:12px/14px Arial, Helvetica, sans-serif; color:#f8f9fb; text-transform:uppercase; mso-padding-alt:12px 10px 10px; border-radius:2px;" bgcolor="#f5ba1c">
+														
+
+													</td>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr><td height="28"></td></tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<!-- module 4 -->
+		<table data-module="module-4" data-thumb="thumbnails/04.png" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td data-bgcolor="bg-module" bgcolor="#eaeced">
+					<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td data-bgcolor="bg-block" class="holder" style="padding:64px 60px 10px;" bgcolor="#f9f9f9">
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<td data-color="title" data-size="size title" data-min="20" data-max="40" data-link-color="link title color" data-link-style="text-decoration:none; color:#292c34;" class="title" align="center" style="font:30px/33px sharp-sans-semibold,Arial,sans-serif; color:#292c34; padding:0 0 23px;">
+											les Nouveautés Med.tn
+										</td>
+									</tr>
+									<tr>
+										<td data-color="text" data-size="size text" data-min="10" data-max="26" data-link-color="link text color" data-link-style="font-weight:bold; text-decoration:underline; color:#40aceb;" align="center" style="font:16px/29px sharp-sans-semibold,Arial,sans-serif; color:#888; padding:0 0 21px;">
+											Check our news
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<th class="flex" width="300" align="left" style="vertical-align:top; padding:0;">
+											<table width="100%" cellpadding="0" cellspacing="0">
+												<!-- post -->
+												<tbody><tr>
+													<td class="img-flex"><img src="https://i.ibb.co/0FC0xTS/test.jpg" style="vertical-align:top;" width="300" height="203" alt=""></td>
+												</tr>
+												<tr>
+													<td data-bgcolor="bg-inner-block-01" class="h-auto" height="297" bgcolor="#a4d3f3">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td class="description" style="padding:10px 40px 10px 70px;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td data-color="title-2" data-size="size title-2" data-min="10" data-max="25" data-link-color="link title-2 color" data-link-style="text-decoration:none; color:#fff;" class="title-2" align="right" style="font:bold 15px/23px Arial, Helvetica, sans-serif; color:#fff; padding:0 0 6px;">
+																				Med.tn Lance sa campagne pour lutter contre l’automédication «اسأل طبيب و ما تسألش مجرب ».
+																			</td>
+																		</tr>
+																		<tr>
+																			<td data-color="text-2" data-size="size text-2" data-min="10" data-max="25" data-link-color="link text-2 color" data-link-style="font-weight:bold; text-decoration:underline; color:#fff;" align="right" style="font:15px/23px Arial, Helvetica, sans-serif; color:#fff;">
+																				Med.tn Lance sa campagne pour lutter contre l’automédication «اسأل طبيب و ما تسألش مجرب ».
+																			</td>
+																		</tr>
+																	</tbody></table>
+																</td>
+															</tr>
+														</tbody></table>
+													</td>
+												</tr>
+												<!-- post -->
+												<tr>
+													<td class="img-flex"><img src="https://i.ibb.co/0FC0xTS/test.jpg" style="vertical-align:top;" width="300" height="203" alt=""></td>
+												</tr>
+												<tr>
+													<td data-bgcolor="bg-inner-block-02" class="h-auto" height="297" bgcolor="#76b3dd">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td class="description" style="padding:10px 40px 10px 70px;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td data-color="title-2" data-size="size title-2" data-min="10" data-max="25" data-link-color="link title-2 color" data-link-style="text-decoration:none; color:#fff;" class="title-2" align="right" style="font:bold 15px/23px sharp-sans-semibold,Arial,sans-serif; sans-serif; color:#fff; padding:0 0 6px;">
+																				les Nouveautés Med.tn
+																			</td>
+																		</tr>
+																		<tr>
+																			<td data-color="text-2" data-size="size text-2" data-min="10" data-max="25" data-link-color="link text-2 color" data-link-style="font-weight:bold; text-decoration:underline; color:#fff;" align="right" style="font:15px/23px Arial, Helvetica, sans-serif; color:#fff;">
+																				Med.tn Lance sa campagne pour lutter contre l’automédication «اسأل طبيب و ما تسألش مجرب ».
+																			</td>
+																		</tr>
+																	</tbody></table>
+																</td>
+															</tr>
+														</tbody></table>
+													</td>
+												</tr>
+											</tbody></table>
+										</th>
+										<th class="flex" width="300" align="left" style="vertical-align:top; padding:0;">
+											<table width="100%" cellpadding="0" cellspacing="0">
+												<!-- post -->
+												<tbody><tr>
+													<td data-bgcolor="bg-inner-block-03" class="h-auto" height="300" bgcolor="#0071bd">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td class="description" style="padding:10px 70px 10px 40px;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td data-color="title-2" data-size="size title-2" data-min="10" data-max="25" data-link-color="link title-2 color" data-link-style="text-decoration:none; color:#fff;" class="title-2" style="font:bold 15px/23px Arial, Helvetica, sans-serif; color:#fff; padding:0 0 6px;">
+																				les Nouveautés Med.tn
+																			</td>
+																		</tr>
+																		<tr>
+																			<td data-color="text-2" data-size="size text-2" data-min="10" data-max="25" data-link-color="link text-2 color" data-link-style="font-weight:bold; text-decoration:underline; color:#fff;" style="font:15px/23px Arial, Helvetica, sans-serif; color:#fff;">
+																				Med.tn Lance sa campagne pour lutter contre l’automédication «اسأل طبيب و ما تسألش مجرب ».
+																			</td>
+																		</tr>
+																	</tbody></table>
+																</td>
+															</tr>
+														</tbody></table>
+													</td>
+												</tr>
+												<tr>
+													<td class="img-flex"><img src="https://i.ibb.co/0FC0xTS/test.jpg" style="vertical-align:top;" width="300" height="200" alt=""></td>
+												</tr>
+												<!-- post -->
+												<tr>
+													<td data-bgcolor="bg-inner-block-04" class="h-auto" height="300" bgcolor="#333c4d">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td class="description" style="padding:10px 70px 10px 40px;">
+																	<table width="100%" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td data-color="title-2" data-size="size title-2" data-min="10" data-max="25" data-link-color="link title-2 color" data-link-style="text-decoration:none; color:#fff;" class="title-2" style="font:bold 15px/23px Arial, Helvetica, sans-serif; color:#fff; padding:0 0 6px;">
+																				les Nouveautés Med.tn
+																			</td>
+																		</tr>
+																		<tr>
+																			<td data-color="text-2" data-size="size text-2" data-min="10" data-max="25" data-link-color="link text-2 color" data-link-style="font-weight:bold; text-decoration:underline; color:#fff;" style="font:15px/23px Arial, Helvetica, sans-serif; color:#fff;">
+																				Med.tn Lance sa campagne pour lutter contre l’automédication «اسأل طبيب و ما تسألش مجرب ».
+																			</td>
+																		</tr>
+																	</tbody></table>
+																</td>
+															</tr>
+														</tbody></table>
+													</td>
+												</tr>
+												<tr>
+													<td class="img-flex"><img src="https://i.ibb.co/0FC0xTS/test.jpg" style="vertical-align:top;" width="300" height="200" alt=""></td>
+												</tr>
+											</tbody></table>
+										</th>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr>
+							<td data-bgcolor="bg-block" class="holder" style="padding:30px 60px 50px;" bgcolor="#f9f9f9">
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<td style="padding:0 0 20px;">
+											<table width="134" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td data-bgcolor="bg-button" data-size="size button" data-min="10" data-max="16" class="btn" align="center" style="font:12px/14px Arial, Helvetica, sans-serif; color:#f8f9fb; text-transform:uppercase; mso-padding-alt:12px 10px 10px; border-radius:2px;" bgcolor="#40aceb">
+														<a target="_blank" style="text-decoration:none; color:#f8f9fb; display:block; padding:12px 10px 10px;" href="#">More news</a>
+													</td>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr><td height="28"></td></tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<!-- module 5 -->
+		<table data-module="module-5" data-thumb="thumbnails/05.png" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td data-bgcolor="bg-module" bgcolor="#eaeced">
+					<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td data-bgcolor="bg-block" class="holder" style="padding:64px 50px 50px;" bgcolor="#292c34">
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<td data-color="title" data-size="size title" data-min="20" data-max="40" data-link-color="link title color" data-link-style="text-decoration:none; color:#f9f9f9;" class="title" align="center" style="font:30px/33px sharp-sans-semibold,Arial,sans-serif; color:#f9f9f9; padding:0 0 23px;">
+											Nos derniers Videos
+										</td>
+									</tr>
+									<tr>
+										<td data-color="text" data-size="size text" data-min="10" data-max="26" data-link-color="link text color" data-link-style="font-weight:bold; text-decoration:underline; color:#40aceb;" align="center" style="font:16px/29px Arial, Helvetica, sans-serif; color:#888; padding:0 0 21px;">
+											Check the latest videos
+										</td>
+									</tr>
+									<!-- gallery -->
+									<tr>
+										<td style="padding:0 0 20px;">
+											<table width="100%" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<th class="flex" width="330" align="left" style="vertical-align:top; padding:0;">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td style="padding:0 0 10px;">
+																	<table align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td class="i-120" valign="top">
+																				<a target="_blank" href="#"><img src="https://i.ibb.co/n3WHMKk/unnamed-3.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt=""></a>
+																			</td>
+																			<td width="10"></td>
+																			<td class="i-120" valign="top">
+																				<a target="_blank" href="#"><img src="https://i.ibb.co/n3WHMKk/unnamed-3.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt=""></a>
+																			</td>
+																		</tr>
+																	</tbody></table>
+																</td>
+															</tr>
+														</tbody></table>
+													</th>
+													<th class="flex" width="10" style="padding:0;"></th>
+													<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td class="i-120" align="center" style="padding:0 0 10px;">
+																	<a target="_blank" href="#"><img src="https://i.ibb.co/n3WHMKk/unnamed-3.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt=""></a>
+																</td>
+															</tr>
+														</tbody></table>
+													</th>
+												</tr>
+												<tr>
+													<th class="flex" width="330" align="left" style="vertical-align:top; padding:0;">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td style="padding:0 0 10px;">
+																	<table align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+																		<tbody><tr>
+																			<td class="i-120" valign="top">
+																				<a target="_blank" href="#"><img src="https://i.ibb.co/n3WHMKk/unnamed-3.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt=""></a>
+																			</td>
+																			<td width="10"></td>
+																			<td class="i-120" valign="top">
+																				<a target="_blank" href="#"><img src="https://i.ibb.co/n3WHMKk/unnamed-3.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt=""></a>
+																			</td>
+																		</tr>
+																	</tbody></table>
+																</td>
+															</tr>
+														</tbody></table>
+													</th>
+													<th class="flex" width="10" style="padding:0;"></th>
+													<th class="flex" width="160" align="left" style="vertical-align:top; padding:0;">
+														<table width="100%" cellpadding="0" cellspacing="0">
+															<tbody><tr>
+																<td class="i-120" align="center" style="padding:0 0 10px;">
+																	<a target="_blank" href="#"><img src="https://i.ibb.co/n3WHMKk/unnamed-3.jpg" border="0" style="vertical-align:top;" width="160" height="160" alt=""></a>
+																</td>
+															</tr>
+														</tbody></table>
+													</th>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+									<tr>
+										<td style="padding:0 0 20px;">
+											<table width="134" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td data-bgcolor="bg-button" data-size="size button" data-min="10" data-max="16" class="btn" align="center" style="font:12px/14px Arial, Helvetica, sans-serif; color:#292c34; text-transform:uppercase; mso-padding-alt:12px 10px 10px; border-radius:2px;" bgcolor="#f9f9f9">
+														<a target="_blank" style="text-decoration:none; color:#292c34; display:block; padding:12px 10px 10px;" href="#">View all</a>
+													</td>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr><td height="28"></td></tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<!-- module 6 -->
+		<table data-module="module-6" data-thumb="thumbnails/06.png" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td data-bgcolor="bg-module" bgcolor="#eaeced">
+					<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td data-bgcolor="bg-block" class="holder" style="padding:64px 60px 50px;" bgcolor="#f9f9f9">
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr>
+										<td data-color="title" data-size="size title" data-min="20" data-max="40" data-link-color="link title color" data-link-style="text-decoration:none; color:#292c34;" class="title" align="center" style="font:30px/33px sharp-sans-semibold,Arial,sans-serif; color:#292c34; padding:0 0 23px;">
+											Participer au Top Question Docteur 
+										</td>
+									</tr>
+									<tr>
+										<td data-color="text" data-size="size text" data-min="10" data-max="26" data-link-color="link text color" data-link-style="font-weight:bold; text-decoration:underline; color:#40aceb;" align="center" style="font:16px/29px Arial, Helvetica, sans-serif; color:#888; padding:0 0 21px;">
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard dummy
+										</td>
+									</tr>
+									<tr>
+										<td style="padding:0 0 20px;">
+											<table width="232" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td data-bgcolor="bg-button" data-size="size button" data-min="10" data-max="20" class="btn" align="center" style="font:bold 16px/18px Arial, Helvetica, sans-serif; color:#f9f9f9; text-transform:uppercase; mso-padding-alt:22px 10px; border-radius:3px;" bgcolor="#e02d74">
+														<a target="_blank" style="text-decoration:none; color:#f9f9f9; display:block; padding:22px 10px;" href="#">50% off any order</a>
+													</td>
+												</tr>
+											</tbody></table>
+										</td>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+						<tr><td height="28"></td></tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+		<!-- module 7 -->
+		<table data-module="module-7" data-thumb="thumbnails/07.png" width="100%" cellpadding="0" cellspacing="0">
+			<tbody><tr>
+				<td data-bgcolor="bg-module" bgcolor="#eaeced">
+					<table class="flexible" width="600" align="center" style="margin:0 auto;" cellpadding="0" cellspacing="0">
+						<tbody><tr>
+							<td class="footer" style="padding:0 0 10px;">
+								<table width="100%" cellpadding="0" cellspacing="0">
+									<tbody><tr class="table-holder">
+										<th class="tfoot" width="400" align="left" style="vertical-align:top; padding:0;">
+											<table width="100%" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td data-color="text" data-link-color="link text color" data-link-style="text-decoration:underline; color:#797c82;" class="aligncenter" style="font:12px/16px Arial, Helvetica, sans-serif; color:#797c82; padding:0 0 10px;">
+														© Copyright 2018 med.tn Tous droits réservés <br>
+														Powered by SmartBoxEntreprise™<a target="_blank" style="text-decoration:underline; color:#797c82;" href="sr_unsubscribe">| View this email in your browser.</a>
+													</td>
+												</tr>
+											</tbody></table>
+										</th>
+										<th class="thead" width="200" align="left" style="vertical-align:top; padding:0;">
+											<table class="center" align="right" cellpadding="0" cellspacing="0">
+												<tbody><tr>
+													<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
+														<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-facebook.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="6" height="13" alt="fb"></a>
+													</td>
+													<td width="20"></td>
+													<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
+														<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-twitter.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="13" height="11" alt="tw"></a>
+													</td>
+													<td width="19"></td>
+													<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
+														<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-google-plus.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="19" height="15" alt="g+"></a>
+													</td>
+													<td width="20"></td>
+													<td class="btn" valign="top" style="line-height:0; padding:3px 0 0;">
+														<a target="_blank" style="text-decoration:none;" href="#"><img src="images/ico-linkedin.png" border="0" style="font:12px/15px Arial, Helvetica, sans-serif; color:#797c82;" align="left" vspace="0" hspace="0" width="13" height="11" alt="in"></a>
+													</td>
+												</tr>
+											</tbody></table>
+										</th>
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+					</tbody></table>
+				</td>
+			</tr>
+		</tbody></table>
+	</td>
+</tr>
+<!-- fix for gmail -->
+<tr>
+	<td style="line-height:0;"><div style="display:none; white-space:nowrap; font:15px/1px courier;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div></td>
+</tr>
+</tbody></table>
+</body></html>
