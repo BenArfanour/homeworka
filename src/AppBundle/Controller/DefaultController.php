@@ -38,7 +38,7 @@ class DefaultController extends FOSRestController
 					    $message = \Swift_Message::newInstance()
 					                ->setSubject('Accusé de réception | Test')
 					                ->setFrom('nour.benarfa@esprit.tn')
-					                ->setTo('nourbenarfa@hotmail.com')
+					                ->setTo('payoneer1995@gmail.com')
   
 					                ->setBody(
 					                $this->renderView('mail.html.twig'),
