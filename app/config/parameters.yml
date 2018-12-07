@@ -7,8 +7,6 @@ parameters:
     database_password: nournour
 
 
-
-
     mailer_transport: smtp
     mailer_encryption: ssl
     mailer_auth_mode: login
@@ -16,7 +14,4 @@ parameters:
     mailer_host: smtp.gmail.com
     mailer_user: benarfanour9@gmail.com
     mailer_password: africanwinners1995
-
-
-
     secret: ThisTokenIsNotSoSecretChangeIt

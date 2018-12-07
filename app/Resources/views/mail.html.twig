@@ -5,968 +5,337 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style type="text/css">
     /* vietnamese */
-    @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUbuvISTs.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-    }
+    @font-face{font-family:'Nunito';font-style:normal;font-weight:300;src:local('Nunito Light'),local('Nunito-Light'),url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUbuvISTs.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}
     /* latin-ext */
-    @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUb-vISTs.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
+    @font-face{font-family:'Nunito';font-style:normal;font-weight:300;src:local('Nunito Light'),local('Nunito-Light'),url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUb-vISTs.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}
     /* latin */
-    @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUYevI.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
+    @font-face{font-family:'Nunito';font-style:normal;font-weight:300;src:local('Nunito Light'),local('Nunito-Light'),url(https://fonts.gstatic.com/s/nunito/v9/XRXW3I6Li01BKofAnsSUYevI.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
     /* vietnamese */
-    @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofIOuaBXso.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-    }
+    @font-face{font-family:'Nunito';font-style:normal;font-weight:400;src:local('Nunito Regular'),local('Nunito-Regular'),url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofIOuaBXso.woff2) format('woff2');unicode-range:U+0102-0103,U+0110-0111,U+1EA0-1EF9,U+20AB;}
     /* latin-ext */
-    @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofIO-aBXso.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-    }
+    @font-face{font-family:'Nunito';font-style:normal;font-weight:400;src:local('Nunito Regular'),local('Nunito-Regular'),url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofIO-aBXso.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}
     /* latin */
-    @font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofINeaB.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-    }
-    /*! CSS Used from: https://adminlte.io/themes/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css */
-    small {
-    font-size: 80%;
-    }
-    @media print {
-    *, :after, :before {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: 0 0 !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    }
-    }
-    * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    small {
-    font-size: 85%;
-    }
-    /*! CSS Used from: https://adminlte.io/themes/AdminLTE/bower_components/Ionicons/css/ionicons.min.css */
-    
-    /*! CSS Used from: https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css */
-    
-    .info-box small {
-    font-size: 14px;
-    }
-    .info-box-icon {
-    display: block;
-    float: left;
-    height: 90px;
-    width: 90px;
-    text-align: center;
-    font-size: 45px;
-    line-height: 90px;
-    background: rgba(0, 0, 0, 0.2);
-    }
-    .info-box-content {
-    padding: 5px 10px;
-    margin-left: 90px;
-    }
- 
-    .info-box-text {
-    display: block;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
-    .info-box-text {
-    text-transform: capitalize;
-    }
-    .bg-aqua {
-    color: #fff !important;
-    }
-    .bg-aqua {
-    background-color: #4eab97 !important;
-    }
-    /* profile viste */
-    /*! CSS Used from: https://adminlte.io/themes/AdminLTE/bower_components/bootstrap/dist/css/bootstrap.min.css */
-    @media print {
-    *, :after, :before {
-    color: #000 !important;
-    text-shadow: none !important;
-    background: 0 0 !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    }
-    }
-    * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    :after, :before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-    /*! CSS Used from: https://adminlte.io/themes/AdminLTE/dist/css/AdminLTE.min.css */
-    .info-box {
-    display: block;
-    min-height: 90px;
-    background: #fff;
-    width: 100%;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.23);
-    border-radius: 2px;
-    margin-bottom: 15px;
-    }
-    .info-box-icon {
-    display: block;
-    float: left;
-    height: 91px;
-    width: 90px;
-    text-align: center;
-    font-size: 45px;
-    line-height: 90px;
-    background: rgba(0, 0, 0, 0.2);
-    }
-    .info-box-content {
-    padding: 5px 10px;
-    margin-left: 90px;
-    }
-    .info-box-number {
-    display: block;
-    font-weight: bold;
-    color: green;
-    font-size: 29px;
-    font-family: Nunito;
-    }
-    .info-box-text {
-    display: block;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    }
-    .info-box-text {
-    text-transform: capitalize;
-    font-size: 13px;
-    float: left;
-    }
-    .bg-yellow {
-    color: #fff !important;
-    }
-    .bg-yellow {
-    background-color: #00c0ef !important;
-    }
-    .bg-red {
-    background-color: #ff0000a1 !important;
-    }
-    .bg-blue {
-    background-color: #00c0ef !important;
-    }
-    .info-x {
-    margin-top: 58px;
-    bottom: 1;
-    float: left;
-    margin-left: -139px;
-    }
-    .info-y {
-    margin-top: 58px;
-    bottom: 1;
-    float: left;
-    margin-left: -105px;
-    font-family: Nunito;
-    font-variant: normal;
-    color: #696969;
-    }
-    .info-z {
-    margin-top: 57px;
-    bottom: 1;
-    float: left;
-    margin-left: -88px;
-    font-family: Nunito;
-    font-variant: normal;
-    color: #696969;
-    font-size: 15px;
-    }
-    /*table */
-    
-    /*end */
-    /* end for stats header*/
-    /* this for table */
-    
-    /* end table */
-    /* CLIENT-SPECIFIC STYLES */
-    
-    /* Force Outlook to provide a "view in browser" message */
-    
-    
-    /* Force Hotmail to display normal line spacing */
-    body, table, td, a {
-    
-    }
-    /* Prevent WebKit and Windows mobile changing default text sizes */
-    table, td {
-    mso-table-lspace: 0pt;
-    mso-table-rspace: 0pt;
-    }
-    /* Remove spacing between tables in Outlook 2007 and up */
-    img {
-    -ms-interpolation-mode: bicubic;
-    }
-    /* Allow smoother rendering of resized image in Internet Explorer */
-    /* RESET STYLES */
-    body {
-    margin: 0;
-    padding: 0;
-    }
-    img {
-    border: 0;
-    height: auto;
-    line-height: 100%;
-    outline: none;
-    text-decoration: none;
-    }
-    table {
-    border-collapse: collapse !important;
-    }
-    
-    
-    
+    @font-face{font-family:'Nunito';font-style:normal;font-weight:400;src:local('Nunito Regular'),local('Nunito-Regular'),url(https://fonts.gstatic.com/s/nunito/v9/XRXV3I6Li01BKofINeaB.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
     /* box top question */
-    
     /* end box /*
     </style>
 </head>
-<body style=" -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%; background-color: #ecf0f5;">
-    <div style=" width: 800px;
+<body style="background-color:#ecf0f5;">
+    <div style="    width: 800px;
         margin-left: auto;
         margin-right: auto;
         padding-top: 5px;">
-        <div style="    background-color: white;
+        <div style="background-color: white;
             width: 100%;">
             <div class="w3-row">
                 <div class="w3-half w3-container">
-                    <img src="https://www.med.tn/img/logomedtn.png" width="71" height="78" style="/* margin-top: 47px; */margin-top: 11%;">
+                    <img src="https://www.med.tn/img/logomedtn.png" width="71" height="78" style="/* margin-top: 47px; */margin-top:11%;">
                 </div>
                 <div class="w3-half w3-container">
                     <h2 align="center" style="margin-top: 33px;font-family: Nunito;">Newsletter Novembre 2018</h2>
                 </div>
             </div>
         </div>
-        <div class=" w3-row" style=" width: 100%;
-            height: 300px;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 5px;
-            background-color: #1b96d5;
-            padding-bottom: 57px;" >
+        <div class="w3-row" style=" width:100%;height:300px;margin-left:auto;margin-right:auto;padding-top:5px;background-color:#1b96d5;padding-bottom:57px;">
             <div class="w3-col">
                 <h1 style="font-family: Nunito;color:white; margin-top: 132px;" align="center"> Le 1er réseau médical Professionnel en Tunisie </h1>
             </div>
         </div>
-        <div style="    width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 5px;
-            padding-bottom: 57px;
-            background-color: #ecf0f5;">
-            <h1 style="font-family: Nunito;" align="center"> Vos Statistiques du moins Octobre </h1>
-            <div  style="margin-left: auto;
-                margin-right: auto;
-                width: 100%;">
+        <div style="        width:100%;margin-left:auto;margin-right:auto;padding-top:5px;background-color:#ecf0f5;">
+            <h1 style="font-family: Nunito;" align="center"> Vos Statistiques Du mois:Novembre </h1>
+            <div style="margin-left:auto;margin-right:auto;width:100%;">
                 <div class="w3-row ">
                     <div class="w3-third w3-container ">
-                        <div style="    display: block;
-                            min-height: 90px;
-                            background: #fff;
-                            width: 100%;
-                            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.23);
-                            border-radius: 2px;
-                            margin-bottom: 15px;">
-                            <span class="info-box-icon bg-yellow">
+                        <div style="        display:block;min-height:90px;background:#fff;width:100%;box-shadow:0 6px 8px rgba(0,0,0,0.23);border-radius:2px;margin-bottom:15px;">
+                            <span class=" bg-yellow" style="font-size:14px;display:block;float:left;height:90px;width:90px;text-align:center;font-size:45px;line-height:90px;background:rgba(0,0,0,0.2);">
                                 <img src="https://i.ibb.co/JdT84wn/user.png" style="margin-top: 0px;">
                             </span>
-                            <div class="info-box-content" style="
-                                font-family: Nunito;
-                                font-variant: normal;
-                                color: #696969;
-                                ">
-                                <span style="   display: block;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis">Visites de votre profile</span>
-                                <span class="info-x">4548</span>
-                                <span style="  display: block;
-                                    font-weight: bold;
-                                    font-size: 23px;
-                                    margin-top: 26px !important;
-                                    float: right;">
-                                    +44
+                            <div style="
+                                font-family:Nunito;font-variant:normal;color:#696969;padding:5px 10px;margin-left:90px;">
+                                <span style="/* font-size:14px; *//* display:block; *//* font-size:14px; *//* white-space:nowrap; *//* overflow:hidden; *//* text-overflow:ellipsis; */font-family: Nunito;font-variant: normal;color: #696969;display: block;font-size: 14px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;text-transform: capitalize;font-size:13px;float:left;">Visites de votre profile</span>
+                                <span style="font-size:14px;margin-top:58px;bottom:1;float:left;margin-left:-139px;">4548</span>
+                                <span style="font-size:14px;display:block;font-weight:bold;font-size:23px;margin-top:26px!important;float:right;color: green;">
+                                    +44%
                                 </span>
                             </div>
                         </div>
                     </div>
                     <div class="w3-third w3-container">
-                        <div style="    display: block;
-                            min-height: 90px;
-                            background: #fff;
-                            width: 100%;
-                            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.23);
-                            border-radius: 2px;
-                            margin-bottom: 15px;">
-                            <span class="info-box-icon bg-aqua">
+                        <div style="        display:block;min-height:90px;background:#fff;width:100%;box-shadow:0 6px 8px rgba(0,0,0,0.23);border-radius:2px;margin-bottom:15px;">
+                            <span style="font-size:14px;display:block;float:left;height:90px;width:90px;text-align:center;font-size:45px;line-height:90px;background:rgba(0,0,0,0.2);" class="bg-aqua">
                                 <img src="https://i.ibb.co/DD07zZk/agenda.png" style="margin-top: 1px;margin-left: 1px;">
                             </span>
-                            <div class="info-box-content">
-                                <span class="info-box-text" style="
-                                    font-family: Nunito;
-                                    font-variant: normal;
-                                    color: #696969;
-                                       display: block;
-                                    font-size: 14px;
-                                    white-space: nowrap;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                ">Rendez Vous pris</span>
-                                <span class="info-y">4548</span>
-                                <span style="  display: block;
-                                    font-weight: bold;
-                                    font-size: 23px;
-                                    margin-top: 26px !important;
-                                float: right;"> 5 rdv</span>
+                            <div style="    padding:5px 10px;margin-left:90px;">
+                                <span style="font-family:Nunito;font-variant:normal;color:#696969;display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-transform: capitalize;font-size:13px;float:left;">Rendez-Vous pris</span>
+                                <span style="font-size:14px;margin-top:58px;bottom:1;float:left;margin-left:-105px;font-family:Nunito;font-variant:normal;color:#696969;" class="info-y">4548</span>
+                                <span style="font-size:14px;display:block;font-weight:bold;font-size:23px;margin-top:26px!important;float:right;color: green;"> 5 rdv</span>
                             </div>
                             <!-- /.info-box-content -->
                         </div>
                     </div>
                     <div class="w3-third w3-container">
-                        <div style="    display: block;
-                            min-height: 90px;
-                            background: #fff;
-                            width: 100%;
-                            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.23);
-                            border-radius: 2px;
-                            margin-bottom: 15px;">
-                            <span class="info-box-icon bg-yellow">
+                        <div style="        display:block;min-height:90px;background:#fff;width:100%;box-shadow:0 6px 8px rgba(0,0,0,0.23);border-radius:2px;margin-bottom:15px;">
+                            <span style="font-size:14px;display:block;float:left;height:90px;width:90px;text-align:center;font-size:45px;line-height:90px;background:rgba(0,0,0,0.2);" class=" bg-yellow">
                                 <img src="https://i.ibb.co/6XR8HKy/msg.png" style="margin-top: 3px;">
                             </span>
-                            <div class="info-box-content">
-                                <span class="info-box-text" style="
-                                    font-family: Nunito;
-                                    font-variant: normal;
-                                    color: #696969;
-                                    display: block;
-                                    font-size: 14px;
-                                    white-space: nowrap;
-                                    overflow: hidden;
-                                    text-overflow: ellipsis;
-                                ">Réponses lus</span>
-                                <span class="info-z">4548</span>
-                                <span style="  display: block;
-                                    font-weight: bold;
-                                    font-size: 23px;
-                                    margin-top: 26px !important;
-                                float: right;">+20%</span>
+                            <div style="    padding:5px 10px;margin-left:90px;">
+                                <span style="font-family:Nunito;font-variant:normal;color:#696969;display:block;font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-transform: capitalize;font-size:13px;float:left;">Réponses lues</span>
+                                <span style="font-size:14px;margin-top:57px;bottom:1;float:left;margin-left:-88px;font-family:Nunito;font-variant:normal;color:#696969;font-size:15px;">4548</span>
+                                <span style="font-size:14px;display:block;font-weight:bold;font-size:23px;margin-top:26px!important;float:right;color: green;">+20%</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <table id="customers" class="responsive-table"
-                    style="border-collapse:collapse;font-family: Trebuchet MS, Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%; -webkit-text-size-adjust: 100%;
-                    -ms-text-size-adjust: 100%;">
-                    
-                    
+                <table id="customers" class="responsive-table" style="border-collapse:collapse;font-family:Trebuchet MS,Arial,Helvetica,sans-serif;border-collapse:collapse;width:100%;">
                     <tbody><tr style="
-                        border: none;
-                        ">
-                        <th style="font-size: 17px;color: #696969;font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;  padding-top: 12px;
-                            padding-bottom: 12px;
-                            text-align: left;
-                            border: none;
-                        color: #100f0f;"></th>
-                        <th style="font-size: 17px;color: #696969;font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;  padding-top: 12px;
-                            padding-bottom: 12px;
-                            text-align: left;
-                            border: none;
-                        color: #100f0f;">Cumulé</th>
-                        <th style="font-size: 17px;color: #696969;font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;  padding-top: 12px;
-                            padding-bottom: 12px;
-                            text-align: left;
-                            border: none;
-                        color: #100f0f;"> Septembre</th>
-                        <th style="font-size: 17px;color: #696969;font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;  padding-top: 12px;
-                            padding-bottom: 12px;
-                            text-align: left;
-                            border: none;
-                        color: #100f0f;">Octobre</th>
+                        border:none;">
+                        <th style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;padding-top:12px;padding-bottom:12px;text-align:left;border:none;color:#100f0f;"></th>
+                        <th style="font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;padding-top:12px;padding-bottom:12px;text-align:left;border:none;color:#100f0f;">Cumulé</th>
+                        <th style="font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;padding-top:12px;padding-bottom:12px;text-align:left;border:none;color:#100f0f;">Octobre</th>
+                        <th style="font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;padding-top:12px;padding-bottom:12px;text-align:left;border:none;color:#100f0f;">Novembre</th>
                     </tr>
                     <tr>
-                        <td  style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                            " ><b style="font-size: 17px;color: #696969;font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                        font-weight: bold;">Rendez-Vous<b></b></b></td>
+                        <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">Rendez-Vous<b></b></b></td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                            ">
+                            font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                         65</td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">4</td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">4</td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">12<b style="float: right; color:green ;">+33%</b></td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">12<b style="float: right; color:green ;">+33%</b></td>
                     </tr>
                     <tr>
-                        <td style="  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                        font-weight: bold;"> <b style="font-size: 17px;color: #696969;font-family: Nunito;">Visites sur votre profile</b></td>
+                        <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">Visites sur votre profile</b></td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">15000</td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">15000</td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;
-                            border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">3402</td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">3402</td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;
-                            border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">4300<b style="float: right; color:green ;">+3%</b></td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">4300<b style="float: right; color:green ;">+3%</b></td>
                     </tr>
                     <tr>
-                        <td style="  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                        font-weight: bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">Reponses lus</b></td>
+                        <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">Reponses lues</b></td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;
-                            border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">33000</td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">33000</td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;
-                            border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">12000</td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">12000</td>
                         <td style="
-                            font-size: 17px;
-                            color: #696969;
-                            font-family: Nunito;
-                            border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;
-                        ">100000<b style="float: right;color: red;margin-left: 37px;">-26%</b></td>
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">100000<b style="float: right;color: red;margin-left: 37px;">-26%</b></td>
+                    </tr>
+                    <tr>
+                        <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">Messages reçus</b></td>
+                        <td style="
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">33000</td>
+                        <td style="
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">12000</td>
+                        <td style="
+                        font-size:17px;color:#696969;font-family:Nunito;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">100000<b style="float: right;color: red;margin-left: 37px;">-26%</b></td>
                     </tr>
                 </tbody></table>
             </div>
         </div>
-        <div style="  background-color: white;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 5px;
-            padding-bottom: 57px;">
-            <h1 align="center" style="font-family: Nunito;"> Les Top Questions </h1>
-            
-            <table id="customers" class="responsive-table"
-                style="border-collapse:collapse;font-family: Trebuchet MS, Arial, Helvetica, sans-serif;border-collapse: collapse;width: 100%; -webkit-text-size-adjust: 100%;
-                -ms-text-size-adjust: 100%;">
+        <div style="    background-color:white;width:100%;margin-left:auto;margin-right:auto;padding-top:5px;padding-bottom:57px;">
+            <h1 align="center" style="font-family: Nunito;">  Vos top réponses lues</h1> <br>
+            <table id="customers" class="responsive-table" style="border-collapse:collapse;font-family:Trebuchet MS,Arial,Helvetica,sans-serif;border-collapse:collapse;width:100%;">
                 <tbody>
                     <tr style="
-                        border: none;
-                        ">
-                        <th style="  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;padding-top: 12px;
-                            padding-bottom: 12px;
-                            text-align: left;
-                            border: none;
-                        color: #100f0f;"> </th>
-                        <th style="  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;padding-top: 12px;
-                            padding-bottom: 12px;
-                            text-align: left;
-                            border: none;
-                        color: #100f0f;"></th>
-                        
-                        
+                        border:none;border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                     </tr>
                     <tr>
-                        <td style="  border: 2px solid #0e0e0e2e;
-                            padding: 6px;
-                            border-left: 0;
-                            border-right: 0;
-                            font-weight: bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
+                        <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
                             Douleurs au niveau des épaules </b><br>
-                            <span style="
-                                font-size: 15px;
-                                color: #563534e3;
-                                font-family: Nunito;
-                            ">Dr Mohamed khalil BEN HAMIDA    Orthopédie - Traumatologie</span>
-                        </td><td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;">
+                        </td><td style="    border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                         2157 vues
                     </td>
-                    
                 </tr>
                 <tr>
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
                         ألم في الركبة </b> <br>
-                        <span style="
-                            font-size: 15px;
-                            color: #563534e3;
-                            font-family: Nunito;
-                        ">Dr Mohamed khalil BEN HAMIDA    Orthopédie - Traumatologie</span>
                     </td>
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                         1500 vues
                     </td>
-                    
                 </tr>
                 <tr>
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
                         وخز في الاصبع الكبير للساق اليمنى </b> <br>
-                        <span style="
-                            font-size: 15px;
-                            color: #563534e3;
-                            font-family: Nunito;
-                        ">Dr Mohamed khalil BEN HAMIDA    Orthopédie - Traumatologie</span>
                     </td>
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                         1230 vues
                     </td>
-                    
                 </tr>
                 <tr>
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;"> <b style="font-size: 17px;color: #696969;font-family: Nunito;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
                         ألم في قدم الساق </b> <br>
-                        <span style="
-                            font-size: 15px;
-                            color: #563534e3;
-                            font-family: Nunito;
-                        ">Dr Mohamed khalil BEN HAMIDA    Orthopédie - Traumatologie</span>
                     </td>
-                    
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                         933 vues
                     </td>
-                    
                 </tr>
                 <tr>
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;"><b style="font-size: 17px;color: #696969;font-family: Nunito;">
                         Hernie discale et lambaire </b><br>
-                        <span style="
-                            font-size: 15px;
-                            color: #563534e3;
-                            font-family: Nunito;
-                        ">Dr Mohamed khalil BEN HAMIDA    Orthopédie - Traumatologie</span>
                     </td>
-                    
-                    <td style="  border: 2px solid #0e0e0e2e;
-                        padding: 6px;
-                        border-left: 0;
-                        border-right: 0;
-                        font-weight: bold;">
+                    <td style=" border:2px solid #0e0e0e2e;padding:6px;border-left:0;border-right:0;font-weight:bold;">
                         860 vues
                     </td>
-                    
                 </tr>
-                
-                
             </tbody></table>
         </div>
-        <div style="  background-color: white;
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            padding-top: 5px;
-            padding-bottom: 57px;">
+        <div style="    background-color:#ecf0f5;width:100%;margin-left:auto;margin-right:auto;padding-top:5px;padding-bottom:57px;">
             <h1 align="center" style="font-family: Nunito;"> Les Articles </h1>
             <div class="w3-row">
                 <div class="w3-half w3-container ">
                     <br>
-                    <img src="https://www.med.tn/uploads/blogs/GROSSESSE/retard_regles_1_high.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;/* height: 33%; */border-radius: 1px;!comment!!comment!">
+                    <img src="https://www.med.tn/uploads/blogs/GROSSESSE/retard_regles_1_high.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;!comment!border-radius: 1px;!comment!!comment!">
                 </div>
                 <div class="w3-half w3-container">
                     <p style="
-                        font-family: Nunito;
-                        font-variant: normal;
-                        color: #696969;
-                        margin-left: auto;
-                        margin-right: auto;
-                        /* margin: 0; */
-                        /* display: block; */
-                    "> Souvent un retard de règles !!</p>
-                    
+                        font-family:Nunito;font-variant:normal;font-weight:bold;font-size:28px;margin-top:14px;color:#696969;margin-left:auto;margin-right:auto;/* height: 33%; *//* margin: 0; */
+                    ">Retard de règles,est ce que je suis enceinte ?</p>
                     <div class="w3-row">
                         <div class="w3-half w3-container " style="
-                            /* margin: 0; */
                             /* display: block; */
-                            margin-left: auto;
-                            margin-right: auto;
-                            ">
+                            /* margin: 0; */
+                            margin-left:auto;margin-right:auto;">
                             <img style="width: 66px;height: 66px;border-radius:100%;" src="https://www.med.tn/uploads/doctors/ca81244dbc243a893a9676f708e57c6a.jpg" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
                         </div>
                         <div class="w3-half w3-container ">
                             <p style="
-                                font-family: Nunito;
-                                margin-left: -22px;
-                            "> Dr Linda GARGOURI - Gynécologue Obstétricien</p>
-                            
+                            font-family:Nunito;margin-left:-22px;"> Dr Linda GARGOURI - Gynécologue Obstétricien</p>
                         </div>
                     </div>
-                    <p style="font-family: Nunito;font-variant: normal;color: #696969;margin-top: 0px;">Souvent un retard de règles (ou encore appele aménorrhée secondaire) est source d'anxièté chez la femme qu'elle soit desireuse ou pas d'une éventuelle grossesse </p>
-                    <button class="btn" style=" font-size: 15px;
-                    font-family: Nunito;
-                    font-weight: normal;
-                    color: #ffffff;
-                    text-decoration: none;
-                    background-color: #5D9CEC;
-                    border-top: 10px solid #5D9CEC;
-                    border-bottom: 10px solid #5D9CEC;
-                    border-left: 20px solid #5D9CEC;
-                    border-right: 20px solid #5D9CEC;
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    display: inline-block;
-                    cursor: pointer;
-                    margin: 0 auto;
-                    display: block;"> Lire la suite </button>
                 </div>
             </div>
             <br><br>
             <div class="w3-row">
                 <div class="w3-half w3-container ">
-                    <img src="https://www.med.tn/uploads/blogs/g%C3%A9neraliste/myopie_0_high.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;/* height: 40%; */color: #666666;font-size: 14px;border-radius: 1px;">
+                    <img src="https://www.med.tn/uploads/blogs/Dermatologue/pelade_0_high.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;!comment!color: #666666;font-size: 14px;border-radius: 1px;">
                 </div>
                 <div class="w3-half w3-container">
-                    <p style="font-family: Nunito;
-                        font-variant: normal;
-                        color: #696969" ;="">
-                        Retard de règles est ce que je suis enceinte ?
+                    <p style="
+                        font-family:Nunito;font-variant:normal;color:#696969;font-weight:bold;font-size:23px;font-weight:bold;font-size:28px;margin-top:-4px;" ;="">
+                        اللحسة (الثعلبة) مرض المناعة الذاتية (maladie auto-immunes)
                     </p>
                     <div class="w3-row">
                         <div class="w3-half w3-container ">
-                            <img style="width: 66px;height: 66px;border-radius:100%;/* border-style: dashed; */" src="https://www.med.tn/img/img.png" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
+                            <img style="width: 66px;height: 66px;border-radius:100%;!comment!" src="https://www.med.tn/uploads/doctors/641fa16b528c1675c4a4889e60287cf8.jpg" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
                         </div>
                         <div class="w3-half w3-container ">
                             <p style="
-                                font-family: Nunito;
-                                margin-left: -22px;
-                            ">Dr Amine SOUGUIR - Ophtalmologue</p>
-                            
+                            font-family:Nunito;margin-left:-22px;">Dr Mongi KALLEL- Dermatologue</p>
                         </div>
                     </div>
-                    <p style="font-family: Nunito;font-variant: normal;color: #696969;margin-top: 0px;">يعرف قصر النظر (myopie)  انتشارا كبيرا حاليا في العالم أجمع وخاصة في القارة الآسيوية بنسبة تجاوزت الخمسين في المئة من الناشئين.</p>
-                    <button class="btn" style=" font-size: 15px;
-                    font-family: Nunito;
-                    font-weight: normal;
-                    color: #ffffff;
-                    text-decoration: none;
-                    background-color: #5D9CEC;
-                    border-top: 10px solid #5D9CEC;
-                    border-bottom: 10px solid #5D9CEC;
-                    border-left: 20px solid #5D9CEC;
-                    border-right: 20px solid #5D9CEC;
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    display: inline-block;
-                    cursor: pointer;
-                    margin: 0 auto;
-                    display: block;"> Lire la suite </button>
                 </div>
             </div>
             <br><br>
             <div class="w3-row">
                 <div class="w3-half w3-container ">
-                    <img src="https://www.med.tn/uploads/blogs/g%C3%A9neraliste/Keratoconus_0_high.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;/* height: 40%; */font-size: 14px;border-radius: 1px;">
+                    <img src="https://www.med.tn/uploads/blogs/g%C3%A9neraliste/Keratoconus_0_high.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;!comment!font-size: 14px;border-radius: 1px;">
                 </div>
                 <div class="w3-half w3-container"><p style="
-                    font-family: Nunito;
-                    font-variant: normal;
-                    color: #696969;
-                "> مرض القرنية المخروطية  </p>
-                
+                font-family:Nunito;font-variant:normal;color:#696969;font-weight:bold;font-size:28px;margin-top:-4px;"> مرض القرنية المخروطية  </p>
                 <div class="w3-row">
                     <div class="w3-half w3-container ">
                         <img style="width: 66px;height: 66px;border-radius:100%;" src="https://www.med.tn/img/img.png" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
                     </div>
                     <div class="w3-half w3-container ">
                         <p style="
-                            font-family: Nunito;
-                            margin-left: -22px;
-                        ">Dr Amine SOUGUIR -Ophtalmologue </p>
-                        
+                        font-family:Nunito;margin-left:-22px;">Dr Amine SOUGUIR -Ophtalmologue </p>
                     </div>
                 </div>
-                <p style="font-family: Nunito;font-variant: normal;color: #696969;margin-top: 0px;">مرض القرنية المخروطية هو مرض يتسبب في بروز القرنية تدريجيا وتغير شكلها الي الشكل المخروطي مع تدهور تدريجي في حدة البصر.</p>
-                <button class="btn" style=" font-size: 15px;
-                font-family: Nunito;
-                font-weight: normal;
-                color: #ffffff;
-                text-decoration: none;
-                background-color: #5D9CEC;
-                border-top: 10px solid #5D9CEC;
-                border-bottom: 10px solid #5D9CEC;
-                border-left: 20px solid #5D9CEC;
-                border-right: 20px solid #5D9CEC;
-                border-radius: 3px;
-                -webkit-border-radius: 3px;
-                -moz-border-radius: 3px;
-                display: inline-block;
-                cursor: pointer;
-                margin: 0 auto;
-                display: block;"> Lire la suite </button>
             </div>
         </div>
-        <div  style="  width: 100%;
-            background-color: #ecf0f5;
-            margin-left: auto;
-            margin-right: auto;
-            padding-bottom: 57px;">
+        <div style="        width:100%;background-color:white;margin-left:auto;margin-right:auto;padding-bottom:57px;">
             <h1 align="center" style="font-family: Nunito;"> Les vidéos </h1>
             <div class="w3-row">
                 <div class="w3-half w3-container ">
-                    <img src="https://i.ibb.co/f4YM24V/img1.png" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;border-radius: 7px;!comment!!comment!">
+                    <img src="https://i.ibb.co/f4YM24V/img1.png" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;border-radius: 1%;!comment!!comment!">
                 </div>
                 <div class="w3-half w3-container">
-                    <p style=" font-family: Nunito;
-                        font-variant: normal;
-                        color: #696969;
-                        ">التلقيح المجهري أو طفل الأنبوب
+                    <div class="w3-row">
+                        <div class="w3-half w3-container " style="
+                            /* display: block; */
+                            /* height: 40%; */
+                            margin-left:auto;margin-right:auto;">
+                            <img style="width: 66px;height: 66px;border-radius:100%;" src="https://www.med.tn/uploads/doctors/ca81244dbc243a893a9676f708e57c6a.jpg" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
+                        </div>
+                        <div class="w3-half w3-container ">
+                            <p style="
+                            font-family:Nunito;margin-left:-22px;"> Dr Linda GARGOURI - Gynécologue Obstétricien</p>
+                        </div>
+                    </div>
+                    <p style=" font-family:Nunito;font-variant:normal;color:#696969;">التلقيح المجهري أو طفل الأنبوب
                     التلقيح المجهري أو طفل الأنبوب مع الدكتور أحمد الصخيري أخصائي أمراض النساء و التوليد</p>
-                    <button class="btn" style=" font-size: 15px;
-                    font-family: Nunito;
-                    font-weight: normal;
-                    color: #ffffff;
-                    text-decoration: none;
-                    background-color: #5D9CEC;
-                    border-top: 10px solid #5D9CEC;
-                    border-bottom: 10px solid #5D9CEC;
-                    border-left: 20px solid #5D9CEC;
-                    border-right: 20px solid #5D9CEC;
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    display: inline-block;
-                    cursor: pointer;
-                    margin: 0 auto;
-                    display: block;">Voir Vidéo</button>
+                    <button class="btn" style="     font-size:15px;font-family:Nunito;font-weight:normal;color:#ffffff;text-decoration:none;background-color:#5D9CEC;border-top:10px solid #5D9CEC;border-bottom:10px solid #5D9CEC;border-left:20px solid #5D9CEC;border-right:20px solid #5D9CEC;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;display:inline-block;cursor:pointer;margin:0 auto;display:block;">Voir Vidéo</button>
                 </div>
             </div>
             <br><br>
             <div class="w3-row">
                 <div class="w3-half w3-container ">
-                    <img src="https://img.youtube.com/vi/rHCc72sBJ0k/0.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;border-radius: 7px;!comment!!comment!">
+                    <img src="https://img.youtube.com/vi/rHCc72sBJ0k/0.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;border-radius: 1px;!comment!!comment!height:">
                 </div>
                 <div class="w3-half w3-container">
-                    <p style="    font-family: Nunito;
-                        font-variant: normal;
-                        color: #696969;
-                        ">جراحة السمنة المرضية
+                    <div class="w3-row">
+                        <div class="w3-half w3-container " style="
+                            /* border-style: dashed; */
+                            /* height: 40%; */
+                            margin-left:auto;margin-right:auto;">
+                            <img style="width: 66px;height: 66px;border-radius:100%;" src="https://www.med.tn/uploads/doctors/ca81244dbc243a893a9676f708e57c6a.jpg" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
+                        </div>
+                        <div class="w3-half w3-container ">
+                            <p style="
+                            font-family:Nunito;margin-left:-22px;"> Dr Linda GARGOURI - Gynécologue Obstétricien</p>
+                        </div>
+                    </div>
+                    <p style="    font-family:Nunito;font-variant:normal;color:#696969;">جراحة السمنة المرضية
                     الأستاذ أمين مقني أخصائي جراحة الاحشاء والجهاز الهضمي</p>
-                    <button class="btn" style=" font-size: 15px;
-                    font-family: Nunito;
-                    font-weight: normal;
-                    color: #ffffff;
-                    text-decoration: none;
-                    background-color: #5D9CEC;
-                    border-top: 10px solid #5D9CEC;
-                    border-bottom: 10px solid #5D9CEC;
-                    border-left: 20px solid #5D9CEC;
-                    border-right: 20px solid #5D9CEC;
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    display: inline-block;
-                    cursor: pointer;
-                    margin: 0 auto;
-                    display: block;">Voir Vidéo</button>
+                    <button class="btn" style="     font-size:15px;font-family:Nunito;font-weight:normal;color:#ffffff;text-decoration:none;background-color:#5D9CEC;border-top:10px solid #5D9CEC;border-bottom:10px solid #5D9CEC;border-left:20px solid #5D9CEC;border-right:20px solid #5D9CEC;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;display:inline-block;cursor:pointer;margin:0 auto;display:block;">Voir Vidéo</button>
                 </div>
             </div>
             <br><br>
             <div class="w3-row">
                 <div class="w3-half w3-container ">
-                    <img src="https://img.youtube.com/vi/l5wbLffROTA/0.jpg" alt="med.tn" width="100%" height="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;border-radius: 7px;">
+                    <img src="https://i.ibb.co/TLcmzdz/tesssssst.png" alt="med.tn" width="100%" border="0" style="display: block;font-family: Arial;color: #666666;font-size: 14px;border-radius: 1px;height: 40%;">
                 </div>
                 <div class="w3-half w3-container">
-                    <p style="    font-family: Nunito;
-                        font-variant: normal;
-                        color: #696969;
-                        ">مرض الاظافر والفطريات - Mycose des ongles
-                    الدكتور منجي قلال أخصائي الامراض الجلدية و التناسلية Dr Mongi KALLEL Dermatologue</p>
-                    <button class="btn" style=" font-size: 15px;
-                    font-family: Nunito;
-                    font-weight: normal;
-                    color: #ffffff;
-                    text-decoration: none;
-                    background-color: #5D9CEC;
-                    border-top: 10px solid #5D9CEC;
-                    border-bottom: 10px solid #5D9CEC;
-                    border-left: 20px solid #5D9CEC;
-                    border-right: 20px solid #5D9CEC;
-                    border-radius: 3px;
-                    -webkit-border-radius: 3px;
-                    -moz-border-radius: 3px;
-                    display: inline-block;
-                    cursor: pointer;
-                    margin: 0 auto;
-                    display: block;">Voir Vidéo</button>
+                    <div class="w3-row"><img src="https://i.ibb.co/z2btPPP/fb.png" style="
+                        width:38px;margin-top:28px;margin-left:65px;">
+                        <p align="center" style="
+                        font-family:Nunito;font-variant:normal;color:#696969;font-size:22px;font-weight:bold;margin-top:-34px;"> facebook Live </p><p>
+                    </p><div class="w3-half w3-container " style="
+                    /* margin: 0; */
+                    /* display: block; */
+                    margin-left:auto;margin-right:auto;">
+                    <img style="width: 66px;height: 66px;border-radius:100%;" src="https://www.med.tn/uploads/doctors/ca81244dbc243a893a9676f708e57c6a.jpg" alt="Dr Linda GARGOURI Gynécologue Obstétricien">
+                </div>
+                <div class="w3-half w3-container ">
+                    <p style="
+                    font-family:Nunito;margin-left:-22px;"> Dr Linda GARGOURI - Gynécologue Obstétricien</p>
                 </div>
             </div>
+            <p style="    font-family:Nunito;font-variant:normal;color:#696969;">بث مباشر مع الأستاذة درة الزغل (أخصائية أمراض النساء و التوليد) للإجابة على أسئلتكم المتعلقة حول المرأة الحامل و الولاد</p>
+            <button class="btn" style="     font-size:15px;font-family:Nunito;font-weight:normal;color:#ffffff;text-decoration:none;background-color:#5D9CEC;border-top:10px solid #5D9CEC;border-bottom:10px solid #5D9CEC;border-left:20px solid #5D9CEC;border-right:20px solid #5D9CEC;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;display:inline-block;cursor:pointer;margin:0 auto;display:block;">Voir Vidéo</button>
         </div>
-        <div style="   height: 0px;
-            width: 100%;
-            background-color: white;">
-            <p align="center" style="font-family: Nunito;
-                font-variant: normal;
-                color: #696969;
-                ">
-                © Copyright 2018 med.tn Tous droits réservés<br>
-            Powered by SmartBoxEntreprise™   |   View this email in your browser</p><p>
-        </p></div>
-        <div>
-        </div></div></div></body></html>
+    </div>
+</div>
+<div style="    background-color:#e8e9ea;width:100%;margin-left:auto;margin-right:auto;padding-top:5px;padding-bottom:57px;">
+    <h1 style="
+    font-family:Nunito;                         /* margin: 0; */color:#696969;font-size:34px;" align="center">
+    « On a négocié pour vous »
+    </h1>
+    <p style="
+        font-family:Nunito;font-family:Nunito;font-weight:bold;font-size:26px;" align="center">
+        Découvrez les remises exceptionnelles négociées avec nos partenaires <span style="color:red">exclusivement</span> pour les <span style="color:red">médecins inscrits sur <a href="http:\\www.med.tn">Med.tn</a></span>
+    </p>
+    <img src="https://i.ibb.co/Dp91yst/test2.png" style="
+    margin-left:100;margin-right:100;">
+</div>
+<div style="    height:0px;width:100%;background-color:white;">
+    <p align="center" style="
+        font-family:Nunito;font-variant:normal;                         /* display: block; */">
+        © Copyright 2018 med.tn Tous droits réservés<br>
+    Powered by SmartBoxEntreprise™   |   View this email in your browser</p><p>
+</p></div>
+<div>
+</div></div></div></body></html>

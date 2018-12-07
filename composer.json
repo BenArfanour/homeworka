@@ -20,6 +20,8 @@
         "friendsofsymfony/user-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "knplabs/knp-paginator-bundle": "^2.8",
+        "leaseweb/api-caller-bundle": "^1.2",
+        "mashape/unirest-php": "^3.0",
         "sendgrid/sendgrid": "~7",
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
